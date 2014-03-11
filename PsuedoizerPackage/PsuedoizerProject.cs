@@ -125,9 +125,10 @@ namespace PsuedoizerPackage
 
 		private bool UsesResXCodeGenerator(ProjectItem item)
 		{
-			const string Generator = "ResXFileCodeGenerator";
+			var generators = new [] { "ResXFileCodeGenerator", "PublicResXFileCodeGenerator" };
 
-			return StringComparer.InvariantCultureIgnoreCase.Equals(GetPropertyValue(item, "CustomTool"), Generator);
+			var itemGenerator = GetPropertyValue(item, "CustomTool");
+			return generators.Any(gen => StringComparer.InvariantCultureIgnoreCase.Equals(itemGenerator, gen));
 		}
 
 		private string GetPropertyValue(ProjectItem item, string property)
