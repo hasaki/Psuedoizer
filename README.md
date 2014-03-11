@@ -74,13 +74,17 @@ It would be awesome to have the following features added:
 # Credits
 
 * John Robbins's [MSDN Bugslayer article](http://msdn.microsoft.com/en-us/magazine/cc163991.aspx) is responsible for the core part of the psuedoizer functionality
-* @shanselman udpated it to include a command line utility, and to be aware of HTML markup and string.format so that it won't mangle characters inside `<>` or `{}` 
+* [@shanselman][shanselman] udpated it to include a command line utility, and to be aware of HTML markup and string.format so that it won't mangle characters inside `<>` or `{}` 
 * Tim Larson added support for Psuedointernationalizing blank resource entries
-* @jackwoodward added a T4 Template for Visual Studio
-* @hasaki wrote the Visual Studio extension
+* [@jackwoodward][jackwoodward] added a T4 Template for Visual Studio
+* [@hasaki][hasaki] wrote the Visual Studio extension
 
 # License
 
 No license was found in @shanselman's repository so its anyone's guess as to what the core Psuedoizer code should be considered.
 
 @hasaki has attached the [Microsoft Public License](http://opensource.org/licenses/MS-PL) to the Visual Studio extension, not including the Psuedoizer-specific portion (that is, the code found in the Psuedo.Globalization namespace).  This license was chosen because his work on customizing the [Web Essentials 2012](https://github.com/hasaki/WebEssentials2012) extension may have influenced his code and that project uses this license.
+
+[shanselman]:https://github.com/shanselman
+[jackwoodward]:https://github.com/jackwoodward
+[hasaki]:https://github.com/hasaki
